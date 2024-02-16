@@ -129,6 +129,21 @@ header button {
 
 /* TRENDING LIST */
 
+.trending-title {
+    width: 80%;
+    margin-inline: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    padding-left: 2em;
+    margin-top: 3em;
+}
+
+.trending-title img {
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
 #trending-container {
   display: flex;
   justify-content: space-between;
@@ -183,6 +198,10 @@ h3 {
 }
 
 /* POSTS  */
+
+section {
+    border-top: 1px solid #e6e7e7;
+}
 
 #maincontent-container {
   display: flex;
