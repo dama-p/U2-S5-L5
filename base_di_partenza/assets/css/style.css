@@ -268,10 +268,7 @@ button.post-tags {
 /*   DISCOVER */
 
 .discover-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  width: 45%;
+  max-width: 40%;
   gap: 0.5em;
 }
 
@@ -294,6 +291,7 @@ button.tags {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   cursor: pointer;
+  margin: 0.5em;
 }
 
 .more-links {
