@@ -211,6 +211,7 @@ h3 {
   align-items: center;
   margin-bottom: 2em;
   gap: 2em;
+  width: 100%;
 }
 
 .image-container {
@@ -270,7 +271,7 @@ button.post-tags {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 50%;
+  width: 45%;
   gap: 0.5em;
 }
 
