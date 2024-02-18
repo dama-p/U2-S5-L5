@@ -324,8 +324,121 @@ button.tags {
 
 /* MEDIA QUERIES */
 
+/* FOR LARGE DESKTOPS */
+
 @media screen and (min-width: 1200px) {
   header {
     background-position: right;
+  }
+}
+
+/* FOR MEDIUM DEVICES */
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 90%;
+  }
+
+  nav {
+    max-width: 90%;
+    font-size: 0.9em;
+  }
+
+  header {
+    background-position: 500px;
+  }
+
+  .intro-container {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 6em;
+  }
+
+  .subtitle {
+    font-size: 1.3em;
+    max-width: 50%;
+  }
+
+  .trending-title {
+    width: 90%;
+  }
+
+  #trending-container {
+    max-width: 90%;
+  }
+
+  .trending-item {
+    width: 50%;
+  }
+
+  #maincontent-container {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 3em;
+  }
+
+  .discover-container {
+    max-width: 100%;
+    order: -1;
+  }
+}
+
+/* FOR MOBILE */
+
+@media screen and (max-width: 600px) {
+  header {
+    background-image: none;
+  }
+
+  .links-container {
+    position: relative;
+    width: 50%;
+  }
+
+  nav a:nth-child(1),
+  .links-container :nth-child(2),
+  .links-container :nth-child(3) {
+    opacity: 0%;
+  }
+
+  nav a:nth-child(4) {
+    order: -1;
+    position: fixed;
+    font-size: 1em;
+    top: 23px;
+    right: 28%;
+  }
+
+  nav a:nth-child(5) {
+    order: -1;
+    font-size: 1em;
+    padding: 0;
+    position: fixed;
+    top: 15px;
+    right: 5%;
+  }
+
+  .title {
+    font-size: 5.5em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+    max-width: 60%;
+  }
+
+  #trending-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .trending-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    width: 100%;
   }
 }
