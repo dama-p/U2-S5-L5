@@ -1,26 +1,3 @@
-/* .spectral-regular {
-    font-family: "Spectral", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  } */
-
-/*   .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  } */
-/*   .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  } */
-
 *,
 *::before,
 *::after {
@@ -30,6 +7,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-size: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -42,19 +20,18 @@ header {
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
   background-image: url(../imgs/M.svg);
-  background-position: right;
+  background-position: 600px;
   background-repeat: repeat-y;
-  
 }
 
 /*   NAVIGATION  */
 
-.nav-container {
+#nav-container {
   width: 100%;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid #191919;
   background-color: #ffc017;
+  border-bottom: 1px solid #191919;
 }
 
 nav {
@@ -78,7 +55,7 @@ nav a {
   font-weight: 400;
 }
 
-header button {
+nav button {
   border: none;
   background-color: #191919;
   color: white;
@@ -88,6 +65,18 @@ header button {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   cursor: pointer;
+}
+
+/* NAVBAR ON SCROLL */
+
+.nav-white {
+  background-color: #fff !important;
+  transition: background-color 300ms linear;
+}
+
+.green-button {
+  background-color: #1a8917;
+  transition: background-color 300ms linear;
 }
 
 /*   INTRODUCTION TO THE PAGE */
@@ -100,13 +89,14 @@ header button {
 }
 
 .title {
-  font-size: 6rem;
+  font-size: 6.3em;
   font-family: "Spectral", serif;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 0;
   line-height: 1em;
   padding-top: 0.5em;
+  letter-spacing: -3px;
 }
 
 .subtitle {
@@ -117,12 +107,16 @@ header button {
 
 .intro-container button {
   padding: 0.6em 2em;
+  border-radius: 2em;
   text-decoration: none;
   color: white;
   font-size: 1.2em;
   font-weight: 400;
   margin-top: 1em;
-  margin-bottom: 3.5em;
+  margin-bottom: 4.5em;
+  border: none;
+  background-color: #191919;
+  cursor: pointer;
 }
 
 /* MAIN CONTENT */
@@ -130,18 +124,18 @@ header button {
 /* TRENDING LIST */
 
 .trending-title {
-    width: 80%;
-    margin-inline: auto;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-size: 1em;
-    padding-left: 2em;
-    margin-top: 3em;
+  width: 80%;
+  margin-inline: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  padding-left: 2em;
+  margin-top: 3em;
 }
 
 .trending-title img {
-    vertical-align: middle;
-    margin-right: 1em;
+  vertical-align: middle;
+  margin-right: 1em;
 }
 
 #trending-container {
@@ -200,7 +194,7 @@ h3 {
 /* POSTS  */
 
 section {
-    border-top: 1px solid #e6e7e7;
+  border-top: 1px solid #e6e7e7;
 }
 
 #maincontent-container {
@@ -216,37 +210,35 @@ section {
 .posts-container {
   display: flex;
   flex-direction: column;
-  gap: 3em;
-  align-items: center;
-  
+  gap: 4em;
+  align-items: flex-start;
 }
 
 .post-content {
-    width: 100%;
+  width: 100%;
 }
 
 .single-post {
   display: flex;
   align-items: center;
-  margin-bottom: 2em;
   gap: 2em;
   width: 100%;
 }
 
 .image-container {
-    max-width: 200px;
-    overflow: hidden;
+  max-width: 200px;
+  overflow: hidden;
 }
 
 .image-container img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
-
 
 h2 {
   font-size: 1.4em;
   font-weight: 900;
+  margin-bottom: -0.1em;
 }
 
 .post-text {
@@ -283,11 +275,10 @@ button.post-tags {
   padding: 0.5em;
 }
 
-
 /*   DISCOVER */
 
 .discover-container {
-  max-width: 40%;
+  max-width: 35%;
   gap: 0.5em;
 }
 
@@ -314,17 +305,23 @@ button.tags {
 }
 
 .more-links {
-    margin-top: 1em;
-    border-top: 1px solid #e6e7e7;
-    padding-top: 1em;
+  margin-top: 1em;
+  border-top: 1px solid #e6e7e7;
+  padding-top: 1em;
 }
 
 .more-links a {
-    text-decoration: none;
-    color: #737782;
-    font-size:  0.7em;
-    padding: 1em;
-    line-height: 3em;
+  text-decoration: none;
+  color: #737782;
+  font-size: 0.7em;
+  padding: 1em;
+  line-height: 3em;
+}
 
+/* MEDIA QUERIES */
 
+@media screen and (min-width: 1200px) {
+  header {
+    background-position: right;
+  }
 }
