@@ -26,7 +26,7 @@ header {
 
 /*   NAVIGATION  */
 
-#nav-container {
+.nav-container {
   width: 100%;
   position: fixed;
   top: 0;
@@ -70,7 +70,7 @@ nav button {
 /* NAVBAR ON SCROLL */
 
 .nav-white {
-  background-color: #fff !important;
+  background-color: #ffff;
   transition: background-color 300ms linear;
 }
 
@@ -212,6 +212,10 @@ section {
   flex-direction: column;
   gap: 4em;
   align-items: flex-start;
+}
+
+.posts-container .single-post:last-child {
+  margin-bottom: 4em;
 }
 
 .post-content {

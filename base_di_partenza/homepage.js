@@ -1,4 +1,4 @@
-const navbar = document.querySelector("#nav-container");
+const navbar = document.querySelector(".nav-container");
 const button = document.querySelector("nav button")
 window.onscroll = () => {
   if (window.scrollY > 465) {
